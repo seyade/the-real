@@ -1,0 +1,110 @@
+.lv-featured-work-panel {
+  border-bottom: 10px solid $lv-brand-yellow;
+}
+
+.lv-featured-work {
+  height: 300px;
+  background: lighten($lv-brand-black, 70%);
+  overflow: hidden;
+}
+
+.lv-featured-work-link {
+  display: block;
+  height: 100%;
+  color: $lv-brand-black;
+}
+
+.lv-featured-work-img {
+  height: 300px;
+  padding: 0;
+}
+
+.lv-featured-work-img-item {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+
+  &.lv-bg {
+    background: url('/images/clients/screens/bg/bg-screen-3.png') no-repeat 0 0 transparent;
+    background-size: cover;
+  }
+
+  &.lv-peridotium {
+    background: url('/images/clients/screens/peridotium/peridotium-screen-2.png') no-repeat 0 0 transparent;
+    background-size: cover;
+  }
+
+  &.lv-mb {
+    background: url('/images/clients/screens/mariabint/mb-screen-1.jpg') no-repeat 0 0 transparent;
+    background-size: cover;
+  }
+
+  &.lv-sky {
+    background: url('/images/clients/screens/bg/bg-screen-3.png') no-repeat 0 0 transparent;
+    background-size: cover;
+  }
+
+  &.lv-tribal {
+    background: url('/images/clients/screens/bg/bg-screen-3.png') no-repeat 0 0 transparent;
+    background-size: cover;
+  }
+
+  &.lv-emanchannel {
+    background: url('/images/clients/screens/bg/bg-screen-3.png') no-repeat 0 0 transparent;
+    background-size: cover;
+  }
+}
+
+// TODO: combine .lv-featured-work-info-right & .lv-featured-work-info-left somehow
+.lv-featured-work-info-right {
+  background: $lv-brand-white;
+  position: relative;
+  height: 300px;
+  &:before {
+    content: '';
+    background: $lv-brand-white;
+    width: 50px;
+    height: 50px;
+    left: -25px;
+    z-index: 5;
+
+    @include vertical-centerer(rotate(45deg));
+  }
+
+  .lv-featured-work-info-title {
+    font-weight: bold;
+    @include centerer(40%, -40%, 50%, -50%);
+  }
+
+  .lv-featured-work-info-descr {
+    @include centerer(60%, -60%, 50%, -50%);
+  }
+}
+
+.lv-featured-work-info-left {
+  background: $lv-brand-white;
+  position: relative;
+  height: 300px;
+  &:after {
+    content: '';
+    background: $lv-brand-white;
+    width: 50px;
+    height: 50px;
+    right: -25px;
+    z-index: 5;
+
+    @include vertical-centerer(rotate(45deg));
+  }
+
+  .lv-featured-work-info-title {
+    font-weight: bold;
+    @include centerer(40%, -40%, 50%, -50%);
+  }
+
+  .lv-featured-work-info-descr {
+    @include centerer(60%, -60%, 50%, -50%);
+  }
+}

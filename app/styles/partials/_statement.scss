@@ -1,0 +1,16 @@
+.lv-statement-panel {
+  background: $lv-brand-yellow;
+  padding: 40px 20%;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  h2 {
+    font-weight: lighter;
+  }
+
+  @media screen and (max-device-width: 736px) {
+    padding: 10px 10%;
+  }
+}

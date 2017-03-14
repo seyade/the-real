@@ -1,0 +1,77 @@
+.lv-header {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 550px;
+
+  // mobile
+  @media screen and (max-device-width: 768px) {
+    min-height: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.lv-header-main {
+  margin-top: 20px;
+  margin-bottom: 150px;
+
+  // mobile
+  @media screen and (max-device-width: 736px) {
+    margin-bottom: 20px;
+  }
+}
+
+.lv-nav {
+  margin-top: 25px;
+  font-size: 1.5em;
+  font-weight: bold;
+
+  a {
+    color: lighten($lv-brand-black, 10%);
+  }
+}
+
+.lv-nav-list {
+  > li {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.lv-banner-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-size: 4em;
+  line-height: 1.42;
+
+  span {
+    background: $lv-brand-black;
+    color: $lv-brand-yellow;
+    padding: 0 10px;
+  }
+
+  @media screen and (max-device-width: 1024px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-device-width: 736px) {
+    line-height: 1.42;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+}
+
+.lv-banner-sub-title {
+  font-family: 'Playfair Display', serif;
+}
+
+.lv-header-image {
+  top: 0;
+  right: -550px;
+  position: absolute;
+}

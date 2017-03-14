@@ -1,0 +1,19 @@
+@mixin browser-prefix($property, $value) {
+  #{'-webkit-' + $property}: $value;
+     #{'-moz-' + $property}: $value;
+      #{'-ms-' + $property}: $value;
+               #{$property}: $value;
+}
+
+@mixin vertical-centerer($extra-value) {
+  position: absolute;
+  top: 50%;
+  @include browser-prefix(transform, translateY(-50%) $extra-value);
+}
+
+@mixin centerer($top: 50%, $y: -50%, $left: 50%, $x: -50%) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  @include browser-prefix(transform, translate($x, $y));
+}

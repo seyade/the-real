@@ -1,0 +1,37 @@
+.lv-footer {
+  background: #302c27;
+  color: $lv-brand-white;
+  padding: 40px;
+  min-height: 100px;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: lighten($lv-brand-black, 80%);
+    &:hover {
+      color: lighten($lv-brand-black, 40%);
+    }
+  }
+
+  .lv-logo {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  @media screen and (max-device-width: 768px) {
+    text-align: center;
+  }
+}
+
+.lv-footer-social {
+  text-align: center;
+  padding-top: 15px;
+
+  .fa {
+    font-size: 24px;
+    width: 50px;
+  }
+}
