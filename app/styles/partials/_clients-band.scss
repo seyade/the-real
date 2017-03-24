@@ -1,4 +1,24 @@
 .lv-clients-band-panel {
   min-height: 150px;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.lv-client-band-logo {
+  margin-right: 100px;
+  opacity: 0.5;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-device-width: 768px) {
+    display: block;
+    margin: 0 auto;
+
+    &:last-child {
+      margin-right: auto;
+    }
+  }
 }
